@@ -1,0 +1,48 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  border: rgba($color: #000000, $alpha: 0.3) solid 2px;
+  border-radius: 1rem;
+  max-width: 50%;
+  padding: 1rem;
+  position: absolute;
+  top: calc(100vh / 2 - 200px);
+  right: 25%;
+  left: 25%;
+
+  &--input {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 6px;
+    input {
+      border-radius: 8px;
+      border-color: rgba($color: #000000, $alpha: 0.3);
+      border-width: 1px;
+      height: 1.1rem;
+      font-size: 1rem;
+      padding: 6px;
+    }
+  }
+
+  &--buttons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    .button{
+      margin: 6px;
+      &--primary {
+        font-size: 1rem;
+        background-color: #fff;
+        padding: 6px;
+        border-radius: 8px;
+        border-width: 1px;
+      }
+      &--secondary {
+        font-size: 12px;
+        background-color: transparent;
+        border-style: none;
+      }
+    }
+  }
+}
